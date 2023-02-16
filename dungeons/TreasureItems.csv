@@ -1,0 +1,15 @@
+TreasureType;Name;Points;Level;Min mana
+WEAPON;Sword;10;1
+WEAPON;Blaster;7;2
+WEAPON;Lightsaber;15;3
+WEAPON;Arrow;50;1
+WEAPON;Stick;25;1
+WEAPON;Pistol;25;1
+SPELL;Dark magic;25;1;20
+SPELL;Mind trap;35;1;25
+SPELL;Hypnotize;20;1;15
+SPELL;Force push;12;2;15
+MANA_POTION;Mana potion 1;20
+MANA_POTION;Mana potion 2;25
+HEALTH_POTION;Health potion 1;30
+HEALTH_POTION;Health potion 2;35
