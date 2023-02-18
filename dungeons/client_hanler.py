@@ -67,7 +67,7 @@ class ClientHandler:
 
             command: Command = Command(client_input)
             print(
-                f"player{self.player.actor_symbol};cmd:{command.commandType}-{command.argument}")
+                f"player{self.player.actor_symbol};cmd:{command.commandType.name}-{command.argument}")
 
             match command.commandType:
                 case (CommandType.LEFT |
@@ -134,6 +134,7 @@ class ClientHandler:
         try:
             game_msg: str = self._game.hero_remove_item_from_backpack(
                 self.player, int(index))
+            self._send_updated_map()
             self._send_msg(game_msg)
         except ValueError:
             self._send_msg(Messages.INVALID_ARGUMENT)
